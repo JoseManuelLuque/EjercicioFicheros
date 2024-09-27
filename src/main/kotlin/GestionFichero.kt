@@ -14,21 +14,12 @@ class GestionFichero() {
 
         //Lista de listas
         var listaNombres = mutableMapOf<String, String>()
-
         var titulos = mutableListOf<String>()
-        var empresas = mutableListOf<MutableList<String>>()
-        for (i in listaEmpresas) {
-            println(i.split(";").toString())
-            if (i.toInt() == 0){
-                titulos.add(i.split(";").toString())
-            }
-            else {
-                println("test")
-            }
-        }
+        titulos.add(listaEmpresas.get(0))
 
-        println(titulos)
-        println(empresas)
+        var empresas = mutableListOf<String>()
+        
+
     }
 
     fun crearCsv(){
